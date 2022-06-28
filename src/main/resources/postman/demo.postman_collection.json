@@ -1,0 +1,73 @@
+{
+	"info": {
+		"_postman_id": "4953bff9-275d-439b-8df3-1982575bee08",
+		"name": "demo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18150958"
+	},
+	"item": [
+		{
+			"name": "getFilmsById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/dni/12345678C/films",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dni",
+						"12345678C",
+						"films"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getSeriesById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/dni/12345678A/series",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dni",
+						"12345678A",
+						"series"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getUserById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/dni/12345678A/info",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dni",
+						"12345678A",
+						"info"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
