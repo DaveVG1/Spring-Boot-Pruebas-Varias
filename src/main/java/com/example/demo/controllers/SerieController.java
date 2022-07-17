@@ -6,10 +6,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
+
 @RestController
 public class SerieController {
     private final Map<String, List<SerieDto>> seriesMap = new HashMap<String, List<SerieDto>>();
@@ -29,10 +27,7 @@ public class SerieController {
 
     @GetMapping("/dni/{id}/series")
     public List<SerieDto> getSeriesById(@PathVariable String id){
-        if(seriesMap.containsKey(id)){
-            return seriesMap.get(id);
-        }else{
-            return new ArrayList<>();
-        }
+        return Optional.ofNullable(seriesMap.get(id))
+                .orElse(new ArrayList<>());
     }
 }

@@ -27,10 +27,7 @@ public class FilmController {
 
     @GetMapping("/dni/{id}/films")
     public List<FilmDto> getFilmsById(@PathVariable String id){
-        if(filmsMap.containsKey(id)){
-            return filmsMap.get(id);
-        }else{
-            return new ArrayList<>();
-        }
+        return Optional.ofNullable(filmsMap.get(id))
+                .orElse(new ArrayList<>());
     }
 }

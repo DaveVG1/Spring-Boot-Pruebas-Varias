@@ -3,6 +3,7 @@ package com.example.demo.controllers;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.InjectMocks;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
@@ -13,7 +14,7 @@ import static org.junit.jupiter.api.Assertions.*;
 @SpringBootTest
 class SerieControllerTest {
 
-    @Autowired
+    @InjectMocks
     private SerieController serieController;
 
     @Test
