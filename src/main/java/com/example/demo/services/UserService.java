@@ -17,8 +17,8 @@ import java.util.concurrent.TimeUnit;
 @Service
 public class UserService {
 
-    private static final String serieUrl = "http://localhost:8080/dni/%s/series";
-    private static final String filmUrl = "http://localhost:8080/dni/%s/films";
+    private static final String serieUrl = "http://localhost:5000/dni/%s/series";
+    private static final String filmUrl = "http://localhost:5000/dni/%s/films";
     @Autowired
     private RestTemplate restTemplate;
     public UserDto getUserById(String id){

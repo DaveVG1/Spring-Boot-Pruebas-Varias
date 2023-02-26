@@ -37,8 +37,8 @@ class UserServiceTest {
     @Mock
     private RestTemplate restTemplate;
 
-    private static final String serieUrl = "http://localhost:8080/dni/%s/series";
-    private static final String filmUrl = "http://localhost:8080/dni/%s/films";
+    private static final String serieUrl = "http://localhost:5000/dni/%s/series";
+    private static final String filmUrl = "http://localhost:5000/dni/%s/films";
 
     private final List<FilmDto> filmDtos = List.of(new FilmDto("Batman", "2000", "Christopher Nolan"));
     private final List<SerieDto> serieDtos = List.of(
