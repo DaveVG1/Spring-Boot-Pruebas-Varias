@@ -9,7 +9,7 @@ RUN mvn -f /home/app/pom.xml clean package
 #
 # Unit Tests
 #
-RUN mvn test /home/app/src
+RUN mvn test /home/app
 
 #
 # Package stage
