@@ -9,7 +9,7 @@ RUN mvn -f /home/app/pom.xml clean package
 #
 # Unit Tests
 #
-RUN cd /home/app
+WORKDIR "/home/app"
 RUN ls -la
 RUN mvn test
 
